@@ -1,0 +1,11 @@
+query SpecificPosts {
+  search(query: "topic:ios", type: REPOSITORY, first: 50) {
+    repositoryCount
+    nodes {
+      ... on Repository {
+        name
+        stargazerCount
+      }
+    }
+  }
+}
