@@ -9,8 +9,12 @@
 import Foundation
 import Apollo
 
-class Network {
-  static let shared = Network()
+// this class is needed for authorization to github api
+
+// this part is taken from stackoverflow https://stackoverflow.com/questions/55395589/how-to-add-header-in-apollo-graphql-ios
+
+final class Network {
+   static let shared = Network()
   
     private(set) lazy var apollo: ApolloClient = {
         let client = URLSessionClient()
@@ -24,17 +28,19 @@ class Network {
     }()
 }
 
-class NetworkInterceptorProvider: LegacyInterceptorProvider {
+// these two classes is needed  add authorization in the bearer token
+
+final class NetworkInterceptorProvider: LegacyInterceptorProvider {
     override func interceptors<Operation: GraphQLOperation>(for operation: Operation) -> [ApolloInterceptor] {
-        var interceptors = super.interceptors(for: operation)
+      var interceptors = super.interceptors(for: operation)
         interceptors.insert(CustomInterceptor(), at: 0)
         return interceptors
     }
 }
 
-class CustomInterceptor: ApolloInterceptor {
+final class CustomInterceptor: ApolloInterceptor {
 
-    let token = "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"
+    let token = "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" // this is the access token from my github account
     
     func interceptAsync<Operation: GraphQLOperation>(
         chain: RequestChain,
@@ -42,7 +48,7 @@ class CustomInterceptor: ApolloInterceptor {
         response: HTTPResponse<Operation>?,
         completion: @escaping (Result<GraphQLResult<Operation.Data>, Error>) -> Void) {
         
-        request.addHeader(name: "authorization", value: "Bearer \(token)")
+        request.addHeader(name: "authorization", value: "Bearer \(token)") // adding the access token for authorization
 
         chain.proceedAsync(request: request,
                            response: response,
