@@ -24,6 +24,10 @@
 		19469421277CA3B7009EA654 /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 19469420277CA3B7009EA654 /* Queries.graphql */; };
 		194A0A7C277CCFED00C2322B /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A0A7B277CCFED00C2322B /* Apollo.swift */; };
 		194A0A7E277CD34B00C2322B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A0A7D277CD34B00C2322B /* API.swift */; };
+		1987E6792796EA7500D7D631 /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1987E6782796EA7500D7D631 /* TableViewCellViewModel.swift */; };
+		1987E67C2796EB5600D7D631 /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1987E67B2796EB5600D7D631 /* RepositoryModel.swift */; };
+		1987E67F2796EBE400D7D631 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1987E67D2796EBE400D7D631 /* TableViewCell.swift */; };
+		1987E6802796EBE400D7D631 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1987E67E2796EBE400D7D631 /* TableViewCell.xib */; };
 		19B9774C2795B715002F08E9 /* RepositoryQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9774B2795B715002F08E9 /* RepositoryQueryService.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +67,10 @@
 		19469420277CA3B7009EA654 /* Queries.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		194A0A7B277CCFED00C2322B /* Apollo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Apollo.swift; path = "ql-uikit/Apollo.swift"; sourceTree = SOURCE_ROOT; };
 		194A0A7D277CD34B00C2322B /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		1987E6782796EA7500D7D631 /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
+		1987E67B2796EB5600D7D631 /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
+		1987E67D2796EBE400D7D631 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		1987E67E2796EBE400D7D631 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		19B9774B2795B715002F08E9 /* RepositoryQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryQueryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +127,8 @@
 		194693E1277CA201009EA654 /* ql-uikit */ = {
 			isa = PBXGroup;
 			children = (
+				1987E67A2796EAC500D7D631 /* Model */,
+				1987E6762796E9FC00D7D631 /* ViewModel */,
 				19B9774A2795B6E7002F08E9 /* Service */,
 				19469428277CC12B009EA654 /* Controller */,
 				19469427277CC119009EA654 /* View */,
@@ -173,6 +183,7 @@
 				194693E8277CA201009EA654 /* Main.storyboard */,
 				194693EB277CA20F009EA654 /* Assets.xcassets */,
 				194693ED277CA20F009EA654 /* LaunchScreen.storyboard */,
+				1987E67E2796EBE400D7D631 /* TableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,8 +192,25 @@
 			isa = PBXGroup;
 			children = (
 				194693E6277CA201009EA654 /* ViewController.swift */,
+				1987E67D2796EBE400D7D631 /* TableViewCell.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		1987E6762796E9FC00D7D631 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1987E6782796EA7500D7D631 /* TableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1987E67A2796EAC500D7D631 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1987E67B2796EB5600D7D631 /* RepositoryModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		19B9774A2795B6E7002F08E9 /* Service */ = {
@@ -308,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1946941F277CA3B0009EA654 /* schema.json in Resources */,
+				1987E6802796EBE400D7D631 /* TableViewCell.xib in Resources */,
 				19469421277CA3B7009EA654 /* Queries.graphql in Resources */,
 				194693EF277CA20F009EA654 /* LaunchScreen.storyboard in Resources */,
 				194693EC277CA20F009EA654 /* Assets.xcassets in Resources */,
@@ -337,8 +366,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				19B9774C2795B715002F08E9 /* RepositoryQueryService.swift in Sources */,
+				1987E67C2796EB5600D7D631 /* RepositoryModel.swift in Sources */,
 				194693E7277CA201009EA654 /* ViewController.swift in Sources */,
+				1987E67F2796EBE400D7D631 /* TableViewCell.swift in Sources */,
 				194693E3277CA201009EA654 /* AppDelegate.swift in Sources */,
+				1987E6792796EA7500D7D631 /* TableViewCellViewModel.swift in Sources */,
 				194693E5277CA201009EA654 /* SceneDelegate.swift in Sources */,
 				194A0A7E277CD34B00C2322B /* API.swift in Sources */,
 				194A0A7C277CCFED00C2322B /* Apollo.swift in Sources */,

@@ -18,9 +18,16 @@ final class ViewController: UIViewController {
     
     fileprivate struct Keys {
         static let cellIdentifier = "cell"
+        static let nibName =  "TableViewCell"
     }
 
-    private var repositories = [Repository]()
+    private var repositories = [RepositoryModel]()
+    
+    override func viewWillAppear(_ animated: Bool) {
+   
+        let nib = UINib(nibName: Keys.nibName, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: Keys.cellIdentifier)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,9 +48,12 @@ extension ViewController : UITableViewDataSource {
       }
       
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Keys.cellIdentifier)!
-          cell.textLabel?.text = "name: " + repositories[indexPath.row].name
-          cell.detailTextLabel?.text = "star Count: " + repositories[indexPath.row].starCount
+      
+        
+        let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: Keys.cellIdentifier) as! TableViewCell
+        
+        cell.configure(with: TableViewCellViewModel(with: repositories[indexPath.row]))
+        
           return cell
       }
       

@@ -9,10 +9,10 @@
 import Foundation
 
 protocol NetworkService {
-    func fetchingGithubRepo(handler: @escaping (([Repository])->Void))
+    func fetchingGithubRepo(handler: @escaping (([RepositoryModel])->Void))
 }
 
-typealias Repository = (name: String, starCount: String)
+
 class RepositoryQueryService: NetworkService {
     
     fileprivate struct Keys {
@@ -21,11 +21,11 @@ class RepositoryQueryService: NetworkService {
     }
     
     
-    private var repositories = [Repository]()
+    private var repositories = [RepositoryModel]()
     
      /// with this network call we fetch the repository name and star count of the first 50 repositories from public GitHub GraphQL API which are satisfying search query, "topic:ios".
      
-     func fetchingGithubRepo(handler: @escaping (([Repository]) -> Void)) {
+     func fetchingGithubRepo(handler: @escaping (([RepositoryModel]) -> Void)) {
         Network.shared.apollo.fetch(query: SpecificPostsQuery()){result in
             
             /// this specificPostsQuery is created in the Apollo.swift file that wraps the graphql query in Queries.grpahql file into a form accessible via swift
@@ -39,7 +39,7 @@ class RepositoryQueryService: NetworkService {
                     for node in nodes {
                         let repoName = node?.jsonObject[Keys.name]
                         let repoStarCount = node?.jsonObject[Keys.count] as! Int
-                        self.repositories.append((repoName as! String, repoStarCount.description))
+                        self.repositories.append(RepositoryModel(name: repoName as! String, starCount: repoStarCount.description))
                         
                     }
                     handler(self.repositories)
