@@ -24,6 +24,7 @@
 		19469421277CA3B7009EA654 /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 19469420277CA3B7009EA654 /* Queries.graphql */; };
 		194A0A7C277CCFED00C2322B /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A0A7B277CCFED00C2322B /* Apollo.swift */; };
 		194A0A7E277CD34B00C2322B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A0A7D277CD34B00C2322B /* API.swift */; };
+		19B9774C2795B715002F08E9 /* RepositoryQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9774B2795B715002F08E9 /* RepositoryQueryService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		19469420277CA3B7009EA654 /* Queries.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		194A0A7B277CCFED00C2322B /* Apollo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Apollo.swift; path = "ql-uikit/Apollo.swift"; sourceTree = SOURCE_ROOT; };
 		194A0A7D277CD34B00C2322B /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		19B9774B2795B715002F08E9 /* RepositoryQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryQueryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		194693E1277CA201009EA654 /* ql-uikit */ = {
 			isa = PBXGroup;
 			children = (
+				19B9774A2795B6E7002F08E9 /* Service */,
 				19469428277CC12B009EA654 /* Controller */,
 				19469427277CC119009EA654 /* View */,
 				19469426277CC0FE009EA654 /* Delegate */,
@@ -180,6 +183,14 @@
 				194693E6277CA201009EA654 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		19B9774A2795B6E7002F08E9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				19B9774B2795B715002F08E9 /* RepositoryQueryService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B9774C2795B715002F08E9 /* RepositoryQueryService.swift in Sources */,
 				194693E7277CA201009EA654 /* ViewController.swift in Sources */,
 				194693E3277CA201009EA654 /* AppDelegate.swift in Sources */,
 				194693E5277CA201009EA654 /* SceneDelegate.swift in Sources */,

@@ -3,4 +3,197 @@
    uuid = "1BF29369-9776-4608-9CA2-953DBED5D98F"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27A3EA45-5472-493C-8195-E959E4C394A6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ql-uikit/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8CD0AB2F-BF22-45F8-B288-83169902F176"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ql-uikit/Service/RepositoryQueryService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "fetchingGithubRepo(handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "737D3DA9-7519-4DA3-8FC9-579D7068FEEB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ql-uikit/Service/RepositoryQueryService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchingGithubRepo(handler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "737D3DA9-7519-4DA3-8FC9-579D7068FEEB - bb023403c918841e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;ql_uikit.SpecificPostsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in ql_uikit.RepositoryQueryService.fetchingGithubRepo(handler: (Swift.Array&lt;(name: Swift.String, starCount: Swift.String)&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ql-uikit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaisalimrankhan/Desktop/ql-uikit/ql-uikit/Service/RepositoryQueryService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "251">
+               </Location>
+               <Location
+                  uuid = "737D3DA9-7519-4DA3-8FC9-579D7068FEEB - bb023403c918841e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;ql_uikit.SpecificPostsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in ql_uikit.RepositoryQueryService.fetchingGithubRepo(handler: (Swift.Array&lt;(name: Swift.String, starCount: Swift.String)&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ql-uikit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaisalimrankhan/Desktop/ql-uikit/ql-uikit/Service/RepositoryQueryService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "294">
+               </Location>
+               <Location
+                  uuid = "737D3DA9-7519-4DA3-8FC9-579D7068FEEB - bb023403c918841e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;ql_uikit.SpecificPostsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in ql_uikit.RepositoryQueryService.fetchingGithubRepo(handler: (Swift.Array&lt;(name: Swift.String, starCount: Swift.String)&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ql-uikit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaisalimrankhan/Desktop/ql-uikit/ql-uikit/Service/RepositoryQueryService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "908">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BEA9331-7EB4-4E33-9666-52177F9D48AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ql-uikit/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5BEA9331-7EB4-4E33-9666-52177F9D48AC - 9db14bed88c22a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ql_uikit.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ql-uikit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaisalimrankhan/Desktop/ql-uikit/ql-uikit/Controller/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "298">
+               </Location>
+               <Location
+                  uuid = "5BEA9331-7EB4-4E33-9666-52177F9D48AC - a51460b90266a015"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;(name: Swift.String, starCount: Swift.String)&gt;) -&gt; () in ql_uikit.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ql-uikit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaisalimrankhan/Desktop/ql-uikit/ql-uikit/Controller/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "85">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3279B7A-1F0B-4E1A-ADFC-56B8B7C1F8C0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ql-uikit/Service/RepositoryQueryService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetchingGithubRepo(handler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D3279B7A-1F0B-4E1A-ADFC-56B8B7C1F8C0 - 6ebcd61d659ddada"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ql_uikit.RepositoryQueryService.fetchingGithubRepo(handler: (Swift.Array&lt;(name: Swift.String, starCount: Swift.String)&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ql-uikit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaisalimrankhan/Desktop/ql-uikit/ql-uikit/Service/RepositoryQueryService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  uuid = "D3279B7A-1F0B-4E1A-ADFC-56B8B7C1F8C0 - bb023403c918841e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;ql_uikit.SpecificPostsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in ql_uikit.RepositoryQueryService.fetchingGithubRepo(handler: (Swift.Array&lt;(name: Swift.String, starCount: Swift.String)&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ql-uikit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaisalimrankhan/Desktop/ql-uikit/ql-uikit/Service/RepositoryQueryService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "251">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

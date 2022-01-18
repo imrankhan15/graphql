@@ -11,7 +11,12 @@ import Apollo
 
 // this class is needed for authorization to github api
 
-// this part is taken from stackoverflow https://stackoverflow.com/questions/55395589/how-to-add-header-in-apollo-graphql-ios
+/// this part is taken from stackoverflow https://stackoverflow.com/questions/55395589/how-to-add-header-in-apollo-graphql-ios
+
+fileprivate struct Keys {
+       static let url = "https://api.github.com/graphql"
+       static let token = "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"
+}
 
 final class Network {
    static let shared = Network()
@@ -21,7 +26,7 @@ final class Network {
         let cache = InMemoryNormalizedCache()
         let store = ApolloStore(cache: cache)
         let provider = NetworkInterceptorProvider(client: client, store: store)
-        let url = URL(string: "https://api.github.com/graphql")!
+        let url = URL(string: Keys.url)!
         let transport = RequestChainNetworkTransport(interceptorProvider: provider,
                                                      endpointURL: url)
         return ApolloClient(networkTransport: transport)
@@ -40,7 +45,7 @@ final class NetworkInterceptorProvider: LegacyInterceptorProvider {
 
 final class CustomInterceptor: ApolloInterceptor {
 
-    let token = "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" // this is the access token from my github account
+    let token = Keys.token // this is the access token from my github account
     
     func interceptAsync<Operation: GraphQLOperation>(
         chain: RequestChain,
