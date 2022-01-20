@@ -9,26 +9,40 @@
 import XCTest
 @testable import ql_uikit
 
-class ql_uikitTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+final class ql_uikitTests: XCTestCase {
+    
+    func test_repositoryIsBeingCalled() {
+        
+       
+        let repositoryQueryServiceSpy = RepositoryQueryServiceSpy()
+        let expectation = self.expectation(description: "fetch query successful")
+        
+        Network.shared.apollo.fetch(query: SpecificPostsQuery()){result in
+            switch result{
+            case .success(let _):
+                expectation.fulfill()
+                
+            case .failure(let error):
+                
+                XCTFail("Cannot execute query. Error: \(error)")
+            }
+            
+           
         }
+        
+        self.waitForExpectations(timeout: 2, handler: nil)
+                   
+         XCTAssertFalse(repositoryQueryServiceSpy.getDataCalled)
+        
+        
     }
+}
 
+
+
+final class RepositoryQueryServiceSpy: NetworkService {
+    private(set) var getDataCalled = false
+    func fetchingGithubRepo(handler: @escaping (([RepositoryModel]) -> Void)) {
+        getDataCalled = true
+    }
 }

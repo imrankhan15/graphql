@@ -211,5 +211,101 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ADA00FEC-6AE0-481D-ABBE-CD6C35FDC768"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ql-uikitTests/ql_uikitTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "test_repositoryIsBeingCalled()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8EB4602-2CA1-48DE-8E2C-A56DF939B790"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ql-uikitTests/ql_uikitTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "test_repositoryIsBeingCalled()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68B28538-DE02-410A-8DFC-3E3EB52F0E4E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ql-uikitTests/ql_uikitTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "test_repositoryIsBeingCalled()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "68B28538-DE02-410A-8DFC-3E3EB52F0E4E - 8b447a2dab8f1d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;ql_uikit.SpecificPostsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in ql_uikitTests.ql_uikitTests.test_repositoryIsBeingCalled() -&gt; ()"
+                  moduleName = "ql-uikitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaisalimrankhan/Desktop/ql-uikit/ql-uikitTests/ql_uikitTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "134">
+               </Location>
+               <Location
+                  uuid = "68B28538-DE02-410A-8DFC-3E3EB52F0E4E - 8b447a2dab8f1d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;ql_uikit.SpecificPostsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in ql_uikitTests.ql_uikitTests.test_repositoryIsBeingCalled() -&gt; ()"
+                  moduleName = "ql-uikitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadfaisalimrankhan/Desktop/ql-uikit/ql-uikitTests/ql_uikitTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "203">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB33D518-ADEA-48D1-8219-3E4EADFC939D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ql-uikitTests/ql_uikitTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "test_repositoryIsBeingCalled()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
