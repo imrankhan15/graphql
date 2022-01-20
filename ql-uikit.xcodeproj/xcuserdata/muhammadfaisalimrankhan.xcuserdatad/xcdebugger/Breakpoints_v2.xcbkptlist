@@ -30,8 +30,8 @@
             filePath = "ql-uikit/Service/RepositoryQueryService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "fetchingGithubRepo(handler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "ql-uikit/Service/RepositoryQueryService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "fetchingGithubRepo(handler:)"
             landmarkType = "7">
             <Locations>
@@ -157,8 +157,8 @@
             filePath = "ql-uikit/Service/RepositoryQueryService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "fetchingGithubRepo(handler:)"
             landmarkType = "7">
             <Locations>
@@ -221,24 +221,8 @@
             filePath = "ql-uikitTests/ql_uikitTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "test_repositoryIsBeingCalled()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F8EB4602-2CA1-48DE-8E2C-A56DF939B790"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ql-uikitTests/ql_uikitTests.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "test_repositoryIsBeingCalled()"
             landmarkType = "7">
          </BreakpointContent>
@@ -253,8 +237,8 @@
             filePath = "ql-uikitTests/ql_uikitTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "test_repositoryIsBeingCalled()"
             landmarkType = "7">
             <Locations>
@@ -301,8 +285,8 @@
             filePath = "ql-uikitTests/ql_uikitTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "test_repositoryIsBeingCalled()"
             landmarkType = "7">
          </BreakpointContent>

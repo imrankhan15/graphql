@@ -8,12 +8,13 @@
 
 import Foundation
 
+/// this protocol is used to inject the network service as a dependency to viewcontroller
 protocol NetworkService {
     func fetchingGithubRepo(handler: @escaping (([RepositoryModel])->Void))
 }
 
 
-class RepositoryQueryService: NetworkService {
+final class RepositoryQueryService: NetworkService {
     
     fileprivate struct Keys {
         static let name = "name"
