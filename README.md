@@ -1,4 +1,5 @@
 # graphql
+This app fetches data from github repo using graph ql and shows in a table view
 
 Here I have used - Swift, UIKIT, Swift package manager, Graphql, Table view, Apollo, MMVM, Dependency Injection, Unit Testing for Web Api
 
